@@ -15,8 +15,7 @@
         <bean
         id = "myPerson"
         class = "com.project.spring.spring_introduction.Person">
-            <constructor-arg ref = "myPet"/>
-<!-- Здесь Dependency Injection с помощью конструктора-->
+            <property name="pet" ref = "myPet"/>
         </bean>
 
 <!--id - идентификатор бина, class - полное имя класса-->
