@@ -3,13 +3,16 @@ package com.project.spring.spring_introduction;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBin")
 public class Person {
 
     private Pet pet;
+//    @Value("${person.surname}")
     private String surname;
+//    @Value("${person.age}")
     private int age;
 
     @Autowired
