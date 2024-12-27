@@ -11,7 +11,9 @@
 
         <bean id = "myPet"
               class=" com.project.spring.spring_introduction.Dog"
-              scope = "singleton">
+              init-method = "init"
+              destroy-method = "destroy"
+              scope="prototype">
         </bean>
 
 </beans>
