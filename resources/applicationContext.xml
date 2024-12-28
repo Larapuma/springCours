@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-        <context:property-placeholder location="classpath:myApp.properties"/>
+        <context:property-placeholder location="classpath:resources/myApp.properties"/>
         <bean id = "myPet"
               class=" com.project.spring.spring_introduction.Cat">
             <!-- получим объект Dog по айди myPet; тег класс - полное имя класса, связанное с id -->
